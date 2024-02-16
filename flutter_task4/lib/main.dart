@@ -64,12 +64,16 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body: ListView.builder(
-          itemCount: players.length,
-          itemBuilder: (context, index) => players[index],
-          padding: const EdgeInsets.all(10),
-          physics: const BouncingScrollPhysics(),
-        ),
+        body: ListView.separated(
+            itemCount: players.length,
+            itemBuilder: (context, index) => players[index],
+            padding: const EdgeInsets.all(10),
+            physics: const BouncingScrollPhysics(),
+            separatorBuilder: (context, index) => const Divider(
+                  color: Colors.grey,
+                  indent: 20,
+                  endIndent: 20,
+                )),
       ),
     );
   }
