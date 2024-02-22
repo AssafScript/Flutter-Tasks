@@ -73,7 +73,8 @@ class MyApp extends StatelessWidget {
                   color: Colors.grey,
                   indent: 20,
                   endIndent: 20,
-                )),
+                ),
+            ),
       ),
     );
   }
