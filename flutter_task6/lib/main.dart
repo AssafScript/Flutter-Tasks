@@ -65,7 +65,7 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      themeMode: isDarkTheme! ? ThemeMode.dark : ThemeMode.light,
+      themeMode: isDarkTheme! ? ThemeMode.light : ThemeMode.dark,
       home: LoginPage(),
     );
   }
